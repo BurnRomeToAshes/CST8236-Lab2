@@ -209,6 +209,6 @@ void Cube::loadTextures() {
 void Cube::rotate(float dt) {
 	_horizontalAngle = 20 * hAngle * dt;
 	_verticalAngle = 20 * vAngle * dt;
-	glRotatef(_horizontalAngle, 0.0f, 1.0f, 0.0f); // rotate at 90 degrees/second on the X axis. 
-	glRotatef(_verticalAngle, 1.0f, 0.0f, 0.0f); //rotate 20 degrees on the Y axis
+	glRotatef(_horizontalAngle, 0.0f, 1.0f, 0.0f);
+	glRotatef(_verticalAngle, 1.0f, 0.0f, 0.0f);
 }

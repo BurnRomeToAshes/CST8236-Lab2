@@ -25,9 +25,6 @@ int main(int argc, char *argv)
 
   glFrontFace(GL_CW);
 
-  float positionZ = 0.5f;
-  float angle = 0.0f;
-  
   sf::Event evt;
   sf::Clock appTimer;
 
@@ -69,10 +66,6 @@ int main(int argc, char *argv)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     GLenum error = glGetError();
-
-    float offset = 0.25f;
-    angle += 90.0f * deltaTime;
-
     
     GLfloat position[] = { 1, -0.1, 2,  0.0f };
     glLightfv(GL_LIGHTING, GL_POSITION, position);
